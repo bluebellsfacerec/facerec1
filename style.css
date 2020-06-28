@@ -54,14 +54,13 @@ html {
     transform: scale(1);
 }
 
-.cameraImage {
+#uploadPreview {
     position: absolute;
-    height: 128px;
-    width: 128px;
-    background-image: url('img/ar-camera.png');
+    /* height: 128px;
+    width: 128px; */
     z-index: 2;
-    top: 48%;
-    left: 35%;
+    top: 51%;
+    left: 33%;
     transform: scale(1);
 }
 

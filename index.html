@@ -15,17 +15,20 @@
         <div class="uploadImage"></div>
         <form id="image-form" action="">
             <label class="file-style">
-            <input type="file" id="upload-image" onchange="upload(this.files[0])" >
+            <input type="file" id="upload-image" onchange="PreviewImage();" >
             UPLOAD
         </label>
         </form>
-        <div class="cameraImage"></div>
-        <label class="camera-style">
-        <input type="button" id="camera-button" name="cameraInput">
+        <!-- <div class="cameraImage"></div> -->
+        <img id="uploadPreview" width="150px" height="100px">
+        <!-- <label class="camera-style">
+        <input type="button" id="camera-button" name="cameraInput"> -->
+
         CAMERA
-    </label>
+        </label>
     </div>
 
 </body>
+<!-- upload(this.files[0]) -->
 
 </html>
