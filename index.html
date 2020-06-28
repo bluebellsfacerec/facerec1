@@ -15,7 +15,7 @@
         <div class="uploadImage"></div>
         <form id="image-form" action="">
             <label class="file-style">
-            <input type="file" id="upload-image" name="uploadImage">
+            <input type="file" id="upload-image" onchange="upload(this.files[0])" >
             UPLOAD
         </label>
         </form>
