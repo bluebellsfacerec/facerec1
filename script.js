@@ -2,7 +2,7 @@ var uploadUrl = "https://face-recognition-masked-unmasked.cognitiveservices.azur
 
 
 var linkUrl = "";
-
+var objJson;
 
 function upload(file) {
     let xhr = new XMLHttpRequest();
@@ -26,10 +26,13 @@ function upload(file) {
     xhr.setRequestHeader('Content-Type', 'application/octet-stream');
     xhr.send(file);
     xhr.onload = () => {
-        //document.getElementById('data').innerHTML = xhr.response
+        // let x = `${xhr.response}`;
+        // objJson = JSON.parse(x);
         alert(xhr.response);
     };
+    //alert(xhr.response);
 }
+
 
 function PreviewImage() {
     var oFReader = new FileReader();

@@ -15,7 +15,7 @@
         <div class="uploadImage"></div>
         <form id="image-form" action="">
             <label class="file-style">
-            <input type="file" id="upload-image" onchange="PreviewImage();" >
+            <input type="file" id="upload-image" onchange="upload(this.files[0])" >
             UPLOAD
         </label>
         </form>
@@ -24,6 +24,7 @@
         <!-- <label class="camera-style">
         <input type="button" id="camera-button" name="cameraInput"> -->
         </label>
+        <p id="ef"></p>
     </div>
 
 </body>
